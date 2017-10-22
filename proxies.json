@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "POSTDemo": {
+            "matchCondition": {
+                "route": "person",
+                "methods": [
+                    "POST"
+                ]
+            },
+            "backendUri": "https://serversncodefunctiondemo.azurewebsites.net/api/serversncodedemo?code=SJ47E3DDWAMeWw2sRU9aKhFYJPFacCTdtA/K7qu5GH86U2JNdKD6jA=="
+        },
+        "get": {
+            "matchCondition": {
+                "route": "person/{id}",
+                "methods": [
+                    "GET"
+                ]
+            },
+            "backendUri": "https://serversncodefunctiondemo.azurewebsites.net/api/serversncodedemo/{id}"
+        }
+    }
+}
